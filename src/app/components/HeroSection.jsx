@@ -12,7 +12,7 @@ const HeroSection = () => {
                     <span className='
                         text-transparent 
                         bg-clip-text bg-gradient-to-r 
-                        from-purple-400 to-pink-600'>
+                        from-primary-400 to-secondary-600'>
                             Hello, I'm {""}
                     </span>
                     <br />
@@ -38,8 +38,8 @@ const HeroSection = () => {
                         px-6 py-3 
                         rounded-full mr-4
                         bg-gradient-to-br 
-                        from-blue-500 via-purple-500
-                        to-pink-500
+                        from-blue-500 via-primary-500
+                        to-secondary-500
                         w-full sm:w-fit
                       bg-white hover:bg-slate-200 
                       text-white'>
@@ -48,8 +48,8 @@ const HeroSection = () => {
                     <button className='
                         px-1 py-1 
                         rounded-full bg-gradient-to-br
-                        from-blue-500 via-purple-500
-                        to-pink-500
+                        from-blue-500 via-primary-500
+                        to-secondary-500
                         w-full sm:w-fit
                         hover:bg-slate-800 text-white
                         mt-3'>
