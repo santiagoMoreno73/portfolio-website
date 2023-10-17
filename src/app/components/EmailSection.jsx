@@ -64,7 +64,7 @@ const EmailSection = () => {
         <div>
             <form className='flex flex-col gap-6' onSubmit={handleSubmit}>
                 <div className='mb-4'>
-                    <label htmlFor="email" type="email" className='text-white block mb-2 text-sm font-medium'>
+                    <label htmlFor="email" className="text-white block text-sm mb-2 font-medium">
                         Your email
                     </label>
                     <input 
@@ -77,7 +77,7 @@ const EmailSection = () => {
                     />
                 </div>
                 <div className='mb-4'>
-                    <label htmlFor="subject" className='text-white block mb-2 text-sm font-medium'>
+                    <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
                         Subject
                     </label>
                     <input 
@@ -90,10 +90,10 @@ const EmailSection = () => {
                     />
                 </div>
                 <div className='mb-4'>
-                    <label htmlFor="message" className='text-white block mb-2 text-sm font-medium'>
+                    <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
                         Message
                     </label>
-                    <texarea 
+                    <textarea 
                         name="message"
                         id="message"
                         className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
