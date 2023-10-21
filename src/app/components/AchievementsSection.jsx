@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const achievementsList = [
   {
@@ -31,8 +31,8 @@ const AchievementsSection = () => {
           return (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.5 }} 
-              animate={{ opacity: 1, scale: 1 }} 
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
