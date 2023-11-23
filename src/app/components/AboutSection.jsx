@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Habilidades",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
@@ -17,14 +17,13 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
+    title: "Educación",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Uniminuto</li>
-        <li>React </li>
-        <li>Node.js</li>
-        <li>Javascript</li>
+        <li>Universidad Minuto de Dios</li>
+        <li>Platzi </li>
+        <li>Udemy </li>
       </ul>
     ),
   },
@@ -33,10 +32,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Front</li>
-        <li>React </li>
-        <li>Node.js</li>
-        <li>Javascript</li>
+        <li>Desarrollador FrontEnd Developer</li>
+        <li>Uso Profesional de React Hooks</li>
+        <li>Git y Github</li>
       </ul>
     ),
   },
@@ -62,12 +60,24 @@ const AboutSection = () => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre mí </h2>
           <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque at
-            eos harum eius, voluptatibus repudiandae debitis ab perspiciatis
-            pariatur commodi odit asperiores voluptatem minima, rerum vero
-            laborum itaque adipisci ipsam?
+            💻 Soy ingeniero de sistemas apasionado por el desarrollo frontend,
+            durante mi carrera, he trabajado en diversos proyectos que abarcan
+            desde la creación de aplicaciones web modernas hasta la
+            implementación de interfaces de usuario intuitivas.
+          </p>
+          <br />
+          <p className="text-base lg:text-lg">
+            🚀 Poseo sólidos conocimientos en JavaScript, destacando en
+            frameworks como React y Angular. Mi experiencia se extiende a
+            Node.js, permitiéndome crear aplicaciones frontend y backend de
+            extremo a extremo.{" "}
+          </p>
+          <br />
+          <p className="text-base lg:text-lg">
+            ☕ Cuando no estoy inmerso en el mundo del código, me encanta
+            disfrutar de una buena taza de café mientras escucho rock.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -75,21 +85,21 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Habilidades{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Ecucación{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
-              Certifications{" "}
+              Certificados{" "}
             </TabButton>
           </div>
           <div className="mt-8">

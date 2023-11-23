@@ -6,11 +6,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 // components
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 
 const navLinks = [
-  { title: "About", path: "#about" },
-  { title: "Projects", path: "#projects" },
-  { title: "Contact", path: "#contact" },
+  { title: "Sobre mi", path: "#about" },
+  { title: "Proyectos", path: "#projects" },
+  { title: "Contacto", path: "#contact" },
 ];
 
 const Navbar = ({ handleChangeTheme, icon }) => {
@@ -30,7 +31,13 @@ const Navbar = ({ handleChangeTheme, icon }) => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image
+            className="rounded-full"
+            alt="logo"
+            src="/images/logo.png"
+            width={50}
+            height={50}
+          />
         </Link>
 
         <div className="mobile-menu block md:hidden">
