@@ -4,9 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer border border-t-[#33353F] border-l-transparent border-r-transparent border-b-transparent text-white">
-      <div className="container p-12 flex justify-between">
+      <div className="container p-12 flex justify-between items-center">
         <Image
-          className="rounded-full"
+          className="rounded-full z-10"
           alt="logo"
           src="/images/logo.png"
           width={50}
