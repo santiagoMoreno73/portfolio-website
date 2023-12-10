@@ -9,10 +9,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>JavaScript</li>
         <li>Angular</li>
         <li>React </li>
         <li>Node.js</li>
-        <li>Javascript</li>
       </ul>
     ),
   },
@@ -22,8 +22,6 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Universidad Minuto de Dios</li>
-        <li>Platzi </li>
-        <li>Udemy </li>
       </ul>
     ),
   },
@@ -32,9 +30,10 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Desarrollador FrontEnd Developer</li>
+        <li>Front End Developer Certified Associate</li>
         <li>Uso Profesional de React Hooks</li>
-        <li>Git y Github</li>
+        <li>Manejo de bases de datos con Python</li>
+        <li>Estructuras de datos en Python</li>
       </ul>
     ),
   },

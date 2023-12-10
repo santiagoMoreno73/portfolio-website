@@ -7,57 +7,63 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Landing page",
+    description:
+      "Landing page desarrollada en React/Next.js, incorporando estilos mediante SASS y lazy load.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/santiagoMoreno73/fly-landing.git",
+    previewUrl: "https://fly-landing-green.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Juego de memoria",
+    description:
+      "Juego de memoria interactivo en JavaScript y CSS para potenciar la agilidad mental y la diversión.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/santiagoMoreno73/game_memory.git",
+    previewUrl: "https://memory-game-iota-ochre.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Simulación 3d",
+    description:
+      "Simulación 3D de la ciudad de Manhattan utilizando Angular 17 y Cesium.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/santiagoMoreno73/manhattan-3d.git",
+    previewUrl: "https://manhattan-3d.vercel.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Weibook App",
+    description:
+      "Colaboré en el desarrollo de la aplicación utilizando Ionic, contribuyendo al diseño.",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "",
+    previewUrl: "https://weibook.co/benefits/agenda",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Aplicación web",
+    description:
+      "Colaboré en el desarrollo de la aplicación web utilizando React.",
+    image: "/images/projects/7.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "",
+    previewUrl: "https://www.geoaitech.com/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "API REST",
+    description:
+      "Api desarrollada en node.js con express, donde se maneja CRUD y autenticación.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/santiagoMoreno73/API_CACAO.git",
+    previewUrl: "",
   },
 ];
 
@@ -108,13 +114,14 @@ const ProjectSection = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.2, delay: index * 0.3 }}
           >
             <ProjectCard
               key={project.id}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
+              iconUrl={project.icon}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
